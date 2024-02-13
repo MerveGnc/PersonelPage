@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    
+    <style>
+    
+    body {
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Georgia";
+    font-size:200%;
+}
+
+footer {
+    background-color: #c6b1e3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.email, .follow-me, .copyright {
+    margin-bottom: 10px;
+    
+}
+
+.follow-me a ,.email a {
+    margin-left: 10px; /* İconlar arasında boşluk bırakın */
+    text-decoration: none;
+    color: #333; /* Link rengini belirleyin */
+}
+
+.follow-me a:hover,.email a:hover {
+    color: #a28ebe; /* Link rengini hover olduğunda değiştirin */
+}
+
+.social-links{
+  margin:3px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #591ca0;
+    color: #fff;
+    padding: 10px;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.menu-items {
+    display: none;
+}
+
+.menu-items a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="menu-icon">&#9776;</span>MENU</div>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="index.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    
+    <header>
+        <div class="container">
+        <img src="hello.jpg" alt="Responsive Image">
+         <p>I'm Merve</p>
+            <p>Welcome to my personal website</p>
+        </div>
+        
+        <div class="article">
+        <a href="resume.html"> <img src="resume.jpg" alt="Responsive Image"></a>
+        <a href="index.html"> <img src="projects.jpeg" alt="Responsive Image"></a>
+        <a href="contact.html"><img src="contact.jpeg" alt="Responsive Image"></a>
+        </div>
+    </header>
+    
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="email">
+              <i class="fas fa-envelope"></i>Email 
+              <div> <a href="mailto:mrvgoncu04@gmail.com">mrvgoncu04@gmail.com</a></div>
+              <div><a href="mailto:merveg1996@hotmail.com">merveg1996@hotmail.com</a>  </div>
+            </div>
+            <div class="follow-me">
+                <div><i class="fas fa-user-plus"></i>Follow Me</div>
+                <div class="social-links">
+ <a href="https://www.linkedin.com/in/mervegoncu"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                     <a href="https://github.com/MerveGnc"> <i class="fab fa-github"></i></a>
+                </div>
+                 </div>
+            <div class="copyright">&copy;Merve Goncu 2024</div>
+        </div>
+    </div>
+</footer>
+
+<body>
+    
+
+
+
+</body>
+</html>

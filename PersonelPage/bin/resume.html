@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+<style>
+header {
+    background-color: #c6b1e3;
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Georgia";
+    font-size:300%;
+    color: #fff;
+}
+
+.menu-container {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #591ca0;
+    color: #fff;
+    padding: 10px;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.menu-items {
+    display: none;
+}
+
+.menu-items a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+#education {
+  padding: 50px 0; 
+}
+h2{
+    text-align: center;
+    color: #591ca0;
+}
+
+
+.line {
+  position: relative; /* Çizgiye göre konumlandırma yapmak için */
+  border-left: 5px solid #431579;
+  height: 500px;
+  margin-left: 200px; /* Çizgi ile eğitim bilgileri arasındaki boşluğu azaltma */
+  float: left; /* Çizgiyi sol tarafa yerleştirme */
+  
+  }
+  
+.education-details {
+ overflow: hidden; /* İçeriklerin çizgiyi aşmasını engelleme */
+
+}
+
+.education-info {
+    margin-left: 25px; /* Eğitim bilgilerini çizginin sağında hizala */
+     overflow: hidden; /* İçeriklerin çizgiyi aşmasını engelleme */
+ 
+}
+ 
+ .symbol1 {
+    position: absolute; 
+    transform: translateX(-15px) translateY(-50px);
+        }
+    
+     .symbol2 {
+  position: absolute; 
+    transform: translateX(-15px) translateY(20px);
+    }
+    
+     .symbol3 {
+    position: absolute; 
+    transform: translateX(-15px) translateY(20px);
+
+    }
+
+.symbol1,.symbol2,.symbol3 i {
+    font-size: 24px; /* Sembol boyutunu ayarlar */
+}
+
+.education-item {
+    display: flex;
+    align-items: center; /* Sembol ve eğitim bilgilerini dikey olarak hizalar */
+    margin-bottom: 20px; /* Eğitim bilgileri arasındaki boşluğu ayarlar */
+}
+
+.language{
+  margin-left: 200px;
+}
+
+</style>
+</head>
+<body>
+<header>   
+<div class="container">
+ <p> Resume </p>
+  </div>
+ </header>
+ 
+<section id="education">
+    <h2>Education</h2>
+    <div class="education-scroll">
+    <div class="line"></div>
+    <div class="education-details">
+    <div class="education-item">
+    <div class="symbol1"><i class="fas fa-graduation-cap"></i></div>
+   
+        <div class="education-info">
+            <h3>Bachelor's Degree Education</h3>
+            <p>Mathematics</p>
+            <p>Hacettepe University | Ankara, TURKEY</p>
+            <p style="color:#e4d4f7;"> 09.2014 – 02.2021</p>
+
+        </div>
+         </div>
+           <div class="symbol2"><i class="fas fa-graduation-cap"></i></div>
+        <div class="education-info">
+            <h3>Erasmus+ Program</h3>
+            <p>Mathematics and Computer Sciences</p>
+             <p>Universitat de Barcelona | Barcelona, SPAIN</p>
+             <p style="color:#e4d4f7;"> 09.2017 – 06.2018</p>
+        </div>
+          <div class="symbol3"><i class="fas fa-graduation-cap"></i></div>
+        <div class="education-info">
+            <h3>Master's Degree Education</h3>
+            <p>Information Systems</p>
+            <p>Hacettepe University | Ankara, TURKEY</p>
+            <p style="color:#e4d4f7;"> 09.2022 – 06.2024</p>
+            
+        </div>
+        </div>
+    </div>
+    
+</section>
+
+<article> <h2>Language Education </h2>
+<div class="language"> 
+<h3> Spanish</h3>
+<p> Ole Languages | Barcelona, SPAIN </p> <label style="color:#e4d4f7;"> 02.2018 – 04.2018</label> 
+<p> Universitat de Barcelona | Barcelona, SPAIN</p> <label style="color:#e4d4f7;"> 10.2017 – 12.2017</label> 
+
+
+<h3> English </h3>
+<p>Embassy English | Cambridge, UNITED KINGDOM</p><label style="color:#e4d4f7;"> 07.2016 – 09.2016</label> 
+</div>
+</article>
+
+ 
+<div class="menu-container">
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="menu-icon">&#9776;</span>MENU</div>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="index.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    
+    
+
+</body>
+</html>
+
+

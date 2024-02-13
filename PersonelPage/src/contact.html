@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+<style>
+
+body{
+    font-family: Georgia;
+    color: #591ca0;
+}
+
+article{
+margin:10px;
+font-size:20px;
+flex:1;
+}
+
+header {
+    background-color: #c6b1e3;
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Georgia";
+    font-size:300%;
+    color: #fff;
+}
+
+.menu-container {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #591ca0;
+    color: #fff;
+    padding: 10px;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.menu-items {
+    display: none;
+}
+
+.menu-items a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+
+.follow-me a ,.email a {
+    margin-left: 10px; /* İconlar arasında boşluk bırakın */
+    text-decoration: none;
+    color: #333; /* Link rengini belirleyin */
+}
+
+.follow-me a:hover,.email a:hover {
+    color: #a28ebe; /* Link rengini hover olduğunda değiştirin */
+}
+
+.email,.follow-me,.phone,.location{
+margin-left:40px;
+margin-top:20px;
+margin:50px;
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start; /* Öğeleri yukarıdan aşağıya hizalar */
+   
+}
+
+.contact-form-container {
+   margin-left: 100px; /* Form ile diğer içerik arasındaki boşluğu ayarlayın */
+   flex:2;
+   flex-basis:300px;
+    
+}
+
+.contact-form-container iframe {
+    border: none;
+      flex:2;
+   
+}
+
+</style>
+</head>
+<body>
+
+
+<header>   
+
+<div class="container">
+ <p> Contact </p>
+  </div>
+ </header>
+ 
+ <div class="menu-container">
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="menu-icon">&#9776;</span>MENU</div>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="index.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    <div class="container2">
+    <article> 
+      <div class="email">
+              <i class="fas fa-envelope"></i><b>Email</b>
+              <div> <a href="mailto:mrvgoncu04@gmail.com">mrvgoncu04@gmail.com</a></div>
+              <div><a href="mailto:merveg1996@hotmail.com">merveg1996@hotmail.com</a>  </div>
+            </div>
+            
+            <div class="follow-me">
+                <div><i class="fas fa-user-plus"></i><b>Follow Me</b></div>
+                <div class="social-links">
+ <a href="https://www.linkedin.com/in/mervegoncu"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                     <a href="https://github.com/MerveGnc"> <i class="fab fa-github"></i></a>
+                </div>
+                 </div>
+                 
+                  <div class="phone">
+             <i class="fas fa-phone"></i><b>Phone</b>
+               <div style="color:#000;">+905370000000</div>
+            </div>
+            
+             <div class="location">
+             <div> <i class="fas fa-map-pin"></i> <b>Location</b></div>
+              <div style="color:#000;"> Hacettepe University</div>
+              <div style="color:#000;"> Beytepe/Ankara Turkey</div>
+            </div>
+            </article>
+            
+                   <!-- Google Formu -->
+           
+            <div class="contact-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5lgKhO0b83hw0hH_ryfvYhxbEk0RfPrDBOj4m_2FgZtfmXg/viewform?embedded=true" width="640" height="896" frameborder="0" marginheight="0" marginwidth="0"  style="flex: 2;">Yükleniyor…</iframe>
+            </div>
+            </div>
+            
+            
+            
+       
+    
+
+</body>
+</html>
